@@ -1,0 +1,42 @@
+{
+    "name": "phpactor/console-extension",
+    "type": "phpactor-extension",
+    "description": "Integrate Symfony Console commands",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "phpactor/container": "^2.0.0",
+        "symfony/console": "^5.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "phpactor.extension_class": "Phpactor\\Extension\\Console\\ConsoleExtension"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Extension\\Console\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Extension\\Console\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

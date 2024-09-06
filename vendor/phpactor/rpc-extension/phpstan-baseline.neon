@@ -1,0 +1,537 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Command\\\\RpcCommand\\:\\:__construct\\(\\) has parameter \\$inputStream with no typehint specified\\.$#"
+			count: 1
+			path: lib/Command/RpcCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Command\\\\RpcCommand\\:\\:processRequest\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Command/RpcCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Command\\\\RpcCommand\\:\\:processRequest\\(\\) has parameter \\$request with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Command/RpcCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Command\\\\RpcCommand\\:\\:lastRequest\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Command/RpcCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Diff\\\\TextEditBuilder\\:\\:calculateTextEdits\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Diff/TextEditBuilder.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\:\\:configure\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:\\$requiredArguments has no typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:hasMissingArguments\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:hasMissingArguments\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:createInputCallback\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:createInputCallback\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:missingArguments\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:missingArguments\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:inputsFromMissingArguments\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\AbstractHandler\\:\\:inputsFromMissingArguments\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/AbstractHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\EchoHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/EchoHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Handler\\\\EchoHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/EchoHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\HandlerRegistry\\:\\:get\\(\\) has parameter \\$handlerName with no typehint specified\\.$#"
+			count: 1
+			path: lib/HandlerRegistry.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\ActiveHandlerRegistry\\:\\:\\$handlers has no typehint specified\\.$#"
+			count: 1
+			path: lib/Registry/ActiveHandlerRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\ActiveHandlerRegistry\\:\\:__construct\\(\\) has parameter \\$handlers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Registry/ActiveHandlerRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\ActiveHandlerRegistry\\:\\:get\\(\\) has parameter \\$handlerName with no typehint specified\\.$#"
+			count: 1
+			path: lib/Registry/ActiveHandlerRegistry.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\LazyContainerHandlerRegistry\\:\\:\\$serviceMap type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Registry/LazyContainerHandlerRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\LazyContainerHandlerRegistry\\:\\:__construct\\(\\) has parameter \\$serviceMap with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Registry/LazyContainerHandlerRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Registry\\\\LazyContainerHandlerRegistry\\:\\:get\\(\\) has parameter \\$handlerName with no typehint specified\\.$#"
+			count: 1
+			path: lib/Registry/LazyContainerHandlerRegistry.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:\\$parameters type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:__construct\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:fromNameAndParameters\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:fromNameAndParameters\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:fromArray\\(\\) has parameter \\$actionConfig with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Request\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Request.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CloseFileResponse\\:\\:fromPath\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/CloseFileResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CloseFileResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/CloseFileResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CollectionResponse\\:\\:__construct\\(\\) has parameter \\$actions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/CollectionResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CollectionResponse\\:\\:fromActions\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/CollectionResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CollectionResponse\\:\\:fromActions\\(\\) has parameter \\$actions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/CollectionResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CollectionResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/CollectionResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\CollectionResponse\\:\\:actions\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/CollectionResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\EchoResponse\\:\\:fromMessage\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/EchoResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\EchoResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/EchoResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ErrorResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ErrorResponse.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:\\$references type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:__construct\\(\\) has parameter \\$references with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:fromArray\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:fromArray\\(\\) has parameter \\$array with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\FileReferencesResponse\\:\\:references\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/FileReferencesResponse.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InformationResponse\\:\\:\\$information has no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/InformationResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InformationResponse\\:\\:__construct\\(\\) has parameter \\$information with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/InformationResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InformationResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InformationResponse.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:\\$choices type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:\\$keyMap type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:__construct\\(\\) has parameter \\$choices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:__construct\\(\\) has parameter \\$keyMap with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:fromNameLabelChoicesAndDefault\\(\\) has parameter \\$choices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Unsafe usage of new static\\(\\)\\.$#"
+			count: 2
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:fromNameLabelChoices\\(\\) has parameter \\$choices with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:withKeys\\(\\) has parameter \\$keyMap with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:choices\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ChoiceInput\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ChoiceInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ConfirmInput\\:\\:fromNameAndLabel\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Input/ConfirmInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ConfirmInput\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ConfirmInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\Input\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/Input.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ListInput\\:\\:\\$allowMultipleResults has no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Input/ListInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\ListInput\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/ListInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\TextInput\\:\\:fromNameLabelAndDefault\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Input/TextInput.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Input\\\\TextInput\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Input/TextInput.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:\\$inputs type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:__construct\\(\\) has parameter \\$inputs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:fromCallbackAndInputs\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:fromCallbackAndInputs\\(\\) has parameter \\$inputs with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:inputs\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\InputCallbackResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/InputCallbackResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\OpenFileResponse\\:\\:fromPathAndOffset\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/OpenFileResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\OpenFileResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/OpenFileResponse.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:\\$references type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:__construct\\(\\) has parameter \\$references with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:fromPathAndReferences\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:fromPathAndReferences\\(\\) has parameter \\$filePath with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:fromPathAndReferences\\(\\) has parameter \\$references with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\FileReferences\\:\\:toArray\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/FileReferences.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\Reference\\:\\:fromStartEndLineNumberAndCol\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/Reference.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\Reference\\:\\:fromStartEndLineNumberLineAndCol\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/Reference.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\Reference\\\\Reference\\:\\:toArray\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/Reference/Reference.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReplaceFileSourceResponse\\:\\:fromPathAndSource\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReplaceFileSourceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReplaceFileSourceResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ReplaceFileSourceResponse.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnChoiceResponse\\:\\:\\$options type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ReturnChoiceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnChoiceResponse\\:\\:__construct\\(\\) has parameter \\$options with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnChoiceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnChoiceResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ReturnChoiceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnChoiceResponse\\:\\:fromOptions\\(\\) has parameter \\$options with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ReturnChoiceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnChoiceResponse\\:\\:options\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnChoiceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnOption\\:\\:__construct\\(\\) has parameter \\$value with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnOption.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnOption\\:\\:fromNameAndValue\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnOption.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnOption\\:\\:fromNameAndValue\\(\\) has parameter \\$value with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnOption.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnOption\\:\\:value\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnOption.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnResponse\\:\\:__construct\\(\\) has parameter \\$value with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/ReturnResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnResponse\\:\\:fromValue\\(\\) has parameter \\$value with no typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\ReturnResponse\\:\\:value\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/ReturnResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\UpdateFileSourceResponse\\:\\:fromPathOldAndNewSource\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Response/UpdateFileSourceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Response\\\\UpdateFileSourceResponse\\:\\:parameters\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Response/UpdateFileSourceResponse.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\RpcVersion\\:\\:asString\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/RpcVersion.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Test\\\\HandlerTester\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Test/HandlerTester.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Rpc\\\\Test\\\\HandlerTester\\:\\:handle\\(\\) has parameter \\$parameters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Test/HandlerTester.php
+

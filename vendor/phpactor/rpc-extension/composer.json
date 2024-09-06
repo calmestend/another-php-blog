@@ -1,0 +1,59 @@
+{
+    "name": "phpactor/rpc-extension",
+    "type": "phpactor-extension",
+    "description": "RPC Extension",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "phpactor/console-extension": "^0.1.6",
+        "phpactor/container": "^2.0.0",
+        "phpactor/file-path-resolver-extension": "^0.3.4",
+        "phpactor/logging-extension": "^0.3.4",
+        "sebastian/diff": "^4.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "jangregor/phpstan-prophecy": "^0.8.1",
+        "phpactor/test-utils": "^1.1.3",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "phpstan/extension-installer": "^1.1",
+        "phpstan/phpstan": "^0.12.87",
+        "phpstan/phpstan-phpunit": "^0.12.19",
+        "phpunit/phpunit": "^9.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.2.x-dev"
+        },
+        "phpactor.extension_class": "Phpactor\\Extension\\Rpc\\RpcExtension"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Extension\\Rpc\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Extension\\Rpc\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "integrate": [
+            "vendor/bin/phpunit",
+            "vendor/bin/php-cs-fixer fix",
+            "vendor/bin/phpstan analyse"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    }
+}

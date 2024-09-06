@@ -1,0 +1,9 @@
+/.phpunit.result.cache
+/cache
+/vendor
+/tests/*/Workspace
+/phpbench.json
+/composer.lock
+/.php_cs.cache
+/.vscode
+.php_cs.cache

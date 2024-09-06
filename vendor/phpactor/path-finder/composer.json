@@ -1,0 +1,45 @@
+{
+    "name": "phpactor/path-finder",
+    "description": "Utility for navigating to related source files",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "webmozart/path-util": "^2.3",
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\ClassFileConverter\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\ClassFileConverter\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "integrate": [
+            "./vendor/bin/phpunit",
+            "./vendor/bin/phpstan analyze",
+            "./vendor/bin/php-cs-fixer fix"
+        ]
+    }
+}

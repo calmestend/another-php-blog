@@ -1,0 +1,42 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoDefinitionHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/GotoDefinitionHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoDefinitionHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/GotoDefinitionHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoImplementationHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/GotoImplementationHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoImplementationHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/GotoImplementationHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoImplementationHandler\\:\\:locationsToReferences\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/GotoImplementationHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoImplementationHandler\\:\\:fileContents\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/GotoImplementationHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoTypeHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Handler/GotoTypeHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ReferenceFinderRpc\\\\Handler\\\\GotoTypeHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Handler/GotoTypeHandler.php
+

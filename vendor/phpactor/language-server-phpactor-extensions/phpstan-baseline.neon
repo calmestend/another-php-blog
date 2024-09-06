@@ -1,0 +1,57 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerCodeTransform\\\\LspCommand\\\\ImportNameCommand\\:\\:__invoke\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerCodeTransform/LspCommand/ImportNameCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerCodeTransform\\\\LspCommand\\\\TransformCommand\\:\\:__invoke\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerCodeTransform/LspCommand/TransformCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerCompletion\\\\Handler\\\\CompletionHandler\\:\\:completion\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerCompletion/Handler/CompletionHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerCompletion\\\\Handler\\\\SignatureHelpHandler\\:\\:signatureHelp\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerCompletion/Handler/SignatureHelpHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerHover\\\\Handler\\\\HoverHandler\\:\\:hover\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerHover/Handler/HoverHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerIndexer\\\\Handler\\\\IndexerHandler\\:\\:reindex\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerIndexer/Handler/IndexerHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerIndexer\\\\Handler\\\\IndexerHandler\\:\\:watch\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerIndexer/Handler/IndexerHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerReferenceFinder\\\\Handler\\\\GotoDefinitionHandler\\:\\:definition\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerReferenceFinder/Handler/GotoDefinitionHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerReferenceFinder\\\\Handler\\\\GotoImplementationHandler\\:\\:gotoImplementation\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerReferenceFinder/Handler/GotoImplementationHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerReferenceFinder\\\\Handler\\\\ReferencesHandler\\:\\:references\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerReferenceFinder/Handler/ReferencesHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\LanguageServerReferenceFinder\\\\Handler\\\\TypeDefinitionHandler\\:\\:type\\(\\) return type with generic interface Amp\\\\Promise does not specify its types\\: TValue$#"
+			count: 1
+			path: lib/LanguageServerReferenceFinder/Handler/TypeDefinitionHandler.php
+

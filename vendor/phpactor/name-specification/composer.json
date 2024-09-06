@@ -1,0 +1,38 @@
+{
+    "name": "phpactor/name-specification",
+    "description": "Value objects for specifying (class/function) names",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Name\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Name\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "require": {
+        "php": "^7.3 || ^8.0"
+    }
+}

@@ -1,0 +1,7 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Php\\\\Model\\\\RuntimePhpVersionResolver\\:\\:resolve\\(\\) should return string\\|null but returns string\\|false\\.$#"
+			count: 1
+			path: lib/Model/RuntimePhpVersionResolver.php
+

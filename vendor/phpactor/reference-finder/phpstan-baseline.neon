@@ -1,0 +1,22 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\ReferenceFinder\\\\ChainDefinitionLocationProvider\\:\\:__construct\\(\\) has parameter \\$providers with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ChainDefinitionLocationProvider.php
+
+		-
+			message: "#^Method Phpactor\\\\ReferenceFinder\\\\ChainImplementationFinder\\:\\:__construct\\(\\) has parameter \\$finders with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ChainImplementationFinder.php
+
+		-
+			message: "#^Method Phpactor\\\\ReferenceFinder\\\\ChainReferenceFinder\\:\\:__construct\\(\\) has parameter \\$finders with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ChainReferenceFinder.php
+
+		-
+			message: "#^Method Phpactor\\\\ReferenceFinder\\\\ChainTypeLocator\\:\\:__construct\\(\\) has parameter \\$locators with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ChainTypeLocator.php
+

@@ -1,0 +1,22 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\Logger\\\\Formatter\\\\FormatterRegistry\\:\\:\\$serviceMap type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Formatter/FormatterRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Logger\\\\Formatter\\\\FormatterRegistry\\:\\:__construct\\(\\) has parameter \\$serviceMap with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Formatter/FormatterRegistry.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Logger\\\\Formatter\\\\PrettyFormatter\\:\\:format\\(\\) has parameter \\$record with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Formatter/PrettyFormatter.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\Logger\\\\Formatter\\\\PrettyFormatter\\:\\:formatBatch\\(\\) has parameter \\$records with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Formatter/PrettyFormatter.php
+

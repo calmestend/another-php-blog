@@ -1,0 +1,292 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:\\$config type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:\\$repositories type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:__construct\\(\\) has parameter \\$repositories with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:read\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:configure\\(\\) has parameter \\$config with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:configure\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:decodeJson\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfig\\:\\:decodeJson\\(\\) has parameter \\$contents with no typehint specified\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfig.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfigLoader\\:\\:\\$repositories type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfigLoader.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionConfigLoader\\:\\:__construct\\(\\) has parameter \\$repositories with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionConfigLoader.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionRepository\\:\\:installedExtensions\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionRepository.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\ComposerExtensionRepository\\:\\:extensionState\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/ComposerExtensionRepository.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\PackageExtensionFactory\\:\\:fromPackages\\(\\) has parameter \\$packages with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/PackageExtensionFactory.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\PackageExtensionFactory\\:\\:fromPackages\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/PackageExtensionFactory.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Adapter\\\\Composer\\\\PackageExtensionFactory\\:\\:extractDependencies\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Adapter/Composer/PackageExtensionFactory.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Command\\\\RemoveCommand\\:\\:removeExtensions\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Command/RemoveCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Command\\\\RemoveCommand\\:\\:resolveExtensionNamesToRemove\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Command/RemoveCommand.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\EventSubscriber\\\\PostInstallSubscriber\\:\\:getSubscribedEvents\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/EventSubscriber/PostInstallSubscriber.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\ExtensionManagerExtension\\:\\:repositoryFile\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/ExtensionManagerExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\ExtensionManagerExtension\\:\\:extensionRepositoryFile\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/ExtensionManagerExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\ExtensionManagerExtension\\:\\:resolvePath\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/ExtensionManagerExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\DependentExtensionFinder\\:\\:findDependentExtensions\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/DependentExtensionFinder.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\DependentExtensionFinder\\:\\:findDependentExtensions\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/DependentExtensionFinder.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\DependentExtensionFinder\\:\\:findDependentPackages\\(\\) has parameter \\$dependents with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/DependentExtensionFinder.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\DependentExtensionFinder\\:\\:findDependentPackages\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/DependentExtensionFinder.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extension\\:\\:\\$dependencies type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extension\\:\\:__construct\\(\\) has parameter \\$classNames with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extension\\:\\:__construct\\(\\) has parameter \\$dependencies with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extension\\:\\:dependencies\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extension\\:\\:classNames\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\ExtensionRepository\\:\\:installedExtensions\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/ExtensionRepository.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\ExtensionState\\:\\:isPrimary\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Model/ExtensionState.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\ExtensionState\\:\\:isSecondary\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Model/ExtensionState.php
+
+		-
+			message: "#^Class Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions implements generic interface IteratorAggregate but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:\\$extensions has no typehint specified\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:__construct\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:merge\\(\\) has parameter \\$extensions with no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:merge\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:sorted\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:getIterator\\(\\) return type has no value type specified in iterable type Traversable\\<mixed, mixed\\>\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:names\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\:\\:primaries\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Model/Extensions.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionInstallHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionInstallHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionInstallHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionInstallHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionInstallHandler\\:\\:formatState\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionInstallHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionInstallHandler\\:\\:createTextInput\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionInstallHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionListHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionListHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionListHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionListHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionListHandler\\:\\:formatState\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionListHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionRemoveHandler\\:\\:handle\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionRemoveHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionRemoveHandler\\:\\:handle\\(\\) has parameter \\$arguments with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionRemoveHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionRemoveHandler\\:\\:formatState\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionRemoveHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Rpc\\\\ExtensionRemoveHandler\\:\\:createTextInput\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Rpc/ExtensionRemoveHandler.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Service\\\\ExtensionLister\\:\\:list\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Service/ExtensionLister.php
+
+		-
+			message: "#^Property Phpactor\\\\Extension\\\\ExtensionManager\\\\Service\\\\InstallerService\\:\\:\\$config has no typehint specified\\.$#"
+			count: 1
+			path: lib/Service/InstallerService.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Service\\\\InstallerService\\:\\:requireExtensions\\(\\) has parameter \\$extensions with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Service/InstallerService.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Service\\\\RemoverService\\:\\:findDependentExtensions\\(\\) has parameter \\$extensionNames with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Service/RemoverService.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ExtensionManager\\\\Service\\\\RemoverService\\:\\:findDependentExtensions\\(\\) return type has no value type specified in iterable type Phpactor\\\\Extension\\\\ExtensionManager\\\\Model\\\\Extensions\\.$#"
+			count: 1
+			path: lib/Service/RemoverService.php
+

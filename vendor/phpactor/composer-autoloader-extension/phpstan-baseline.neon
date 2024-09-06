@@ -1,0 +1,27 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ComposerAutoloader\\\\ClassLoaderFactory\\:\\:resolveMap\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ClassLoaderFactory.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ComposerAutoloader\\\\ComposerAutoloaderExtension\\:\\:logAutoloaderNotFound\\(\\) has parameter \\$autoloaderPath with no typehint specified\\.$#"
+			count: 1
+			path: lib/ComposerAutoloaderExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ComposerAutoloader\\\\ComposerAutoloaderExtension\\:\\:deregisterAutoloader\\(\\) has parameter \\$currentAutoloaders with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ComposerAutoloaderExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ComposerAutoloader\\\\ComposerAutoloaderExtension\\:\\:classMapsOnly\\(\\) has parameter \\$autoloaderPaths with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ComposerAutoloaderExtension.php
+
+		-
+			message: "#^Method Phpactor\\\\Extension\\\\ComposerAutoloader\\\\ComposerAutoloaderExtension\\:\\:classMapsOnly\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/ComposerAutoloaderExtension.php
+

@@ -1,0 +1,11 @@
+{
+  "name": "barac/blog",
+  "require": {
+    "phpactor/phpactor": "^0.18.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "App\\": "src/"
+    }
+  }
+}

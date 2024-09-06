@@ -1,0 +1,62 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Method Phpactor\\\\Name\\\\FullyQualifiedName\\:\\:fromArray\\(\\) has parameter \\$parts with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/FullyQualifiedName.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\FullyQualifiedName\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/FullyQualifiedName.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\Name\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Name.php
+
+		-
+			message: "#^Class Phpactor\\\\Name\\\\Names implements generic interface IteratorAggregate but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: lib/Names.php
+
+		-
+			message: "#^Property Phpactor\\\\Name\\\\Names\\:\\:\\$names type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Names.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\Names\\:\\:fromNames\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Names.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\Names\\:\\:fromNames\\(\\) has parameter \\$array with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Names.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\Names\\:\\:getIterator\\(\\) return type with generic class ArrayIterator does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: lib/Names.php
+
+		-
+			message: "#^Property Phpactor\\\\Name\\\\QualifiedName\\:\\:\\$parts type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/QualifiedName.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\QualifiedName\\:\\:__construct\\(\\) has parameter \\$parts with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/QualifiedName.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\QualifiedName\\:\\:fromArray\\(\\) has parameter \\$parts with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/QualifiedName.php
+
+		-
+			message: "#^Method Phpactor\\\\Name\\\\QualifiedName\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/QualifiedName.php
+

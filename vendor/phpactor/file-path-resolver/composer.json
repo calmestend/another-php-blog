@@ -1,0 +1,42 @@
+{
+    "name": "phpactor/file-path-resolver",
+    "description": "Resolve files paths for your application (e.g. cache, data, etc)",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "dnoegel/php-xdg-base-dir": "^0.1.0",
+        "webmozart/path-util": "^2.3",
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpbench/phpbench": "dev-master",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "psr/log": "^1.1",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\FilePathResolver\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\FilePathResolver\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.8.x-dev"
+        }
+    }
+}

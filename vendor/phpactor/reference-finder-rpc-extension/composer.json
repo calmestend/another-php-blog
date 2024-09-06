@@ -1,0 +1,50 @@
+{
+    "name": "phpactor/reference-finder-rpc-extension",
+    "type": "phpactor-extension",
+    "description": "Description about my project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "phpactor/container": "^2.0.0",
+        "phpactor/reference-finder-extension": "^0.1.7",
+        "phpactor/rpc-extension": "^0.2.3"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        },
+        "phpactor.extension_class": "Phpactor\\Extension\\ReferenceFinderRpc\\ReferenceFinderRpcExtension"
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Extension\\ReferenceFinderRpc\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Extension\\ReferenceFinderRpc\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "integrate": [
+            "./vendor/bin/php-cs-fixer fix",
+            "./vendor/bin/phpstan analyse lib -c phpstan.neon",
+            "./vendor/bin/phpunit"
+        ]
+    }
+}

@@ -1,0 +1,27 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Phpactor\\\\WorseReferenceFinder\\\\WorsePlainTextClassDefinitionLocator\\:\\:\\$breakingChars type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/WorsePlainTextClassDefinitionLocator.php
+
+		-
+			message: "#^Method Phpactor\\\\WorseReferenceFinder\\\\WorsePlainTextClassDefinitionLocator\\:\\:__construct\\(\\) has parameter \\$breakingChars with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/WorsePlainTextClassDefinitionLocator.php
+
+		-
+			message: "#^Method Phpactor\\\\WorseReferenceFinder\\\\WorsePlainTextClassDefinitionLocator\\:\\:resolveImportTable\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/WorsePlainTextClassDefinitionLocator.php
+
+		-
+			message: "#^Method Phpactor\\\\WorseReferenceFinder\\\\WorsePlainTextClassDefinitionLocator\\:\\:resolveNamespace\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/WorsePlainTextClassDefinitionLocator.php
+
+		-
+			message: "#^Method Phpactor\\\\WorseReflection\\\\Core\\\\Reflection\\\\Collection\\\\ReflectionConstantCollection\\:\\:get\\(\\) invoked with 1 parameter, 0 required\\.$#"
+			count: 1
+			path: lib/WorseReflectionDefinitionLocator.php
+

@@ -1,0 +1,43 @@
+{
+    "name": "phpactor/config-loader",
+    "description": "Library to load (user) configuration",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "dnoegel/php-xdg-base-dir": "^0.1.0",
+        "webmozart/path-util": "^2.3",
+        "php": "^7.3 || ^8.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpactor/test-utils": "~1.1.3",
+        "phpbench/phpbench": "dev-master",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "symfony/yaml": "^4.2",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\ConfigLoader\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\ConfigLoader\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}

@@ -1,0 +1,51 @@
+{
+    "name": "phpactor/source-code-filesystem",
+    "description": "Filesystem library for working with source code files",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "webmozart/glob": "^4.4",
+        "webmozart/path-util": "^2.3",
+        "symfony/process": "^4.0||^5.0",
+        "symfony/filesystem": "^4.2 || ^5.0"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "phpspec/prophecy-phpunit": "^2.0",
+        "symfony/var-dumper": "^5.2",
+        "phpactor/test-utils": "^1.1"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.1.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\Filesystem\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\Filesystem\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "integrate": [
+            "vendor/bin/php-cs-fixer fix --allow-risky=yes",
+            "vendor/bin/phpstan analyse",
+            "vendor/bin/phpunit"
+        ]
+    }
+}

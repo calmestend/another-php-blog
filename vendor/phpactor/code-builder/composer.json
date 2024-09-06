@@ -1,0 +1,51 @@
+{
+    "name": "phpactor/code-builder",
+    "description": "Generating and modifying source code",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Daniel Leech",
+            "email": "daniel@dantleech.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3 || ^8.0",
+        "microsoft/tolerant-php-parser": "~0.1.0",
+        "phpactor/text-document": "~1.2.3",
+        "phpactor/worse-reflection": "~0.4.7",
+        "twig/twig": "^2.4"
+    },
+    "require-dev": {
+        "ergebnis/composer-normalize": "^2.0",
+        "friendsofphp/php-cs-fixer": "^2.17",
+        "phpactor/test-utils": "~1.1.3",
+        "phpstan/phpstan": "~0.12.0",
+        "phpunit/phpunit": "^9.0",
+        "symfony/var-dumper": "^5.0",
+        "phpspec/prophecy-phpunit": "^2.0"
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "0.4.x-dev"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Phpactor\\CodeBuilder\\": "lib/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Phpactor\\CodeBuilder\\Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "integrate": [
+            "vendor/bin/php-cs-fixer fix",
+            "vendor/bin/phpstan analyse lib -c phpstan.neon",
+            "vendor/bin/phpunit"
+        ]
+    }
+}

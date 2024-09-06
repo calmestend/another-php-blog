@@ -1,0 +1,52 @@
+parameters:
+	ignoreErrors:
+		-
+			message: "#^Property Phpactor\\\\FilePathResolver\\\\CachingPathResolver\\:\\:\\$cache type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/CachingPathResolver.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Exception\\\\UnknownToken\\:\\:__construct\\(\\) has parameter \\$knownTokens with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Exception/UnknownToken.php
+
+		-
+			message: "#^Class Phpactor\\\\FilePathResolver\\\\Expanders implements generic interface IteratorAggregate but does not specify its types\\: TKey, TValue$#"
+			count: 1
+			path: lib/Expanders.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Expanders\\:\\:__construct\\(\\) has parameter \\$expanders with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Expanders.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Expanders\\:\\:toArray\\(\\) return type has no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/Expanders.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Expanders\\:\\:get\\(\\) has no return typehint specified\\.$#"
+			count: 1
+			path: lib/Expanders.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Expanders\\:\\:getIterator\\(\\) return type has no value type specified in iterable type Traversable\\<mixed, mixed\\>\\.$#"
+			count: 1
+			path: lib/Expanders.php
+
+		-
+			message: "#^Property Phpactor\\\\FilePathResolver\\\\Filter\\\\TokenExpandingFilter\\:\\:\\$expanders type has no value type specified in iterable type Phpactor\\\\FilePathResolver\\\\Expanders\\.$#"
+			count: 1
+			path: lib/Filter/TokenExpandingFilter.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\Filter\\\\TokenExpandingFilter\\:\\:__construct\\(\\) has parameter \\$expanders with no value type specified in iterable type Phpactor\\\\FilePathResolver\\\\Expanders\\.$#"
+			count: 1
+			path: lib/Filter/TokenExpandingFilter.php
+
+		-
+			message: "#^Method Phpactor\\\\FilePathResolver\\\\FilteringPathResolver\\:\\:__construct\\(\\) has parameter \\$filters with no value type specified in iterable type array\\.$#"
+			count: 1
+			path: lib/FilteringPathResolver.php
+

@@ -1,0 +1,50 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Monolog\Handler\StreamHandler;
+use Phpactor\Container\PhpactorContainer;
+use Phpactor\Extension\ClassToFile\ClassToFileExtension;
+use Phpactor\Extension\CompletionWorse\CompletionWorseExtension;
+use Phpactor\Extension\Completion\CompletionExtension;
+use Phpactor\Extension\ComposerAutoloader\ComposerAutoloaderExtension;
+use Phpactor\Extension\Console\ConsoleExtension;
+use Phpactor\Extension\LanguageServerCompletion\LanguageServerCompletionExtension;
+use Phpactor\Extension\LanguageServerHover\LanguageServerHoverExtension;
+use Phpactor\Extension\LanguageServerIndexer\LanguageServerIndexerExtension;
+use Phpactor\Extension\LanguageServerReferenceFinder\LanguageServerReferenceFinderExtension;
+use Phpactor\Extension\LanguageServerWorseReflection\LanguageServerWorseReflectionExtension;
+use Phpactor\Extension\LanguageServer\LanguageServerExtension;
+use Phpactor\Extension\Logger\Formatter\PrettyFormatter;
+use Phpactor\Extension\Logger\LoggingExtension;
+use Phpactor\Extension\ReferenceFinder\ReferenceFinderExtension;
+use Phpactor\Extension\SourceCodeFilesystem\SourceCodeFilesystemExtension;
+use Phpactor\Extension\WorseReflection\WorseReflectionExtension;
+use Phpactor\FilePathResolverExtension\FilePathResolverExtension;
+use Phpactor\Indexer\Extension\IndexerExtension;
+use Symfony\Component\Console\Application;
+
+$container = PhpactorContainer::fromExtensions([
+    ConsoleExtension::class,
+    LanguageServerExtension::class,
+    LoggingExtension::class,
+    FilePathResolverExtension::class,
+], [
+    FilePathResolverExtension::PARAM_PROJECT_ROOT => realpath(__DIR__ . '/..'),
+    FilePathResolverExtension::PARAM_APPLICATION_ROOT => realpath(__DIR__ .'/..'),
+    LoggingExtension::PARAM_FORMATTER => 'pretty',
+    LoggingExtension::PARAM_LEVEL => 'debug',
+    LoggingExtension::PARAM_ENABLED => true,
+]);
+
+$handler = new StreamHandler(STDERR);
+$handler->setFormatter($container->get(PrettyFormatter::class));
+$handler->setLevel('debug');
+$container->get(LoggingExtension::SERVICE_LOGGER)->pushHandler($handler);
+
+$application = new Application();
+$application->setCommandLoader(
+    $container->get(ConsoleExtension::SERVICE_COMMAND_LOADER)
+);
+$application->run();
